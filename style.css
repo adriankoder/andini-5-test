@@ -40,11 +40,9 @@ body {
 p {
     color: white;
     justify-content: flex-end;
+    align-items: flex-start;
     height: 7px;
     display: flex;
-    flex-direction: column;
-    flex-direction: row;
-    align-items: flex-end;
     font-size: 12px; /* Endre størrelsen til det du ønsker */
 }
 
