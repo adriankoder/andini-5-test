@@ -1,0 +1,92 @@
+/* Generelle stiler som gjelder for alle enheter */
+body {
+    background-color: rgb(0, 0, 0);
+    position: relative; /* Gjør body til relativt posisjonert */
+}
+
+/* Stil for å endre størrelsen på bildene */
+.andini-forskreket {
+    width: 555px;
+    height: auto;
+    position: absolute; /* Setter bildet til absolutt posisjonering */
+    top: 15%; /* Plasserer bildet i toppen av body */
+    right: 35%; /* Plasserer bildet i høyre side av body */
+    background-image: url("andini med kanin.jpg"); /* Legger til bakgrunnsbilde */
+    background-size: cover; /* Sørger for at bakgrunnsbildet dekker hele elementet */
+    transform: rotate(5deg);
+}
+
+.andini-med-tørkle-i-honden {
+    width: 390px;
+    height: auto;
+    position: absolute; /* Setter bildet til absolutt posisjonering */
+    top: 15%; /* Plasserer bildet i toppen av body */
+    right: 73%; /* Plasserer bildet i høyre side av body */
+    background-image: url("andini med kanin.jpg"); /* Legger til bakgrunnsbilde */
+    background-size: cover; /* Sørger for at bakgrunnsbildet dekker hele elementet */
+}
+
+.bilde-av-andini-og-kanin {
+    width: 136px;
+    height: auto;
+    position: absolute; /* Setter bildet til absolutt posisjonering */
+    top: 0; /* Plasserer bildet i toppen av body */
+    right: 0%; /* Plasserer bildet i høyre side av body */
+    background-image: url("andini med kanin.jpg"); /* Legger til bakgrunnsbilde */
+    background-size: cover; /* Sørger for at bakgrunnsbildet dekker hele elementet */
+    transform: rotate(-5deg);
+}
+
+p {
+    color: white;
+    justify-content: flex-end;
+    height: 7px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: 12px; /* Endre størrelsen til det du ønsker */
+}
+
+h1 {
+    color: white;
+}
+
+.container {
+    display: flex;
+}
+
+.left-content {
+    width: 45%; /* Justerer bredden etter behov */
+    justify-content: flex-start; /* Plasserer innholdet til venstre */
+    align-items: flex-start; /* Justerer vertikal plassering */
+}
+
+.right-content {
+    width: 45%; /* Justerer bredden etter behov */
+    justify-content: flex-end; /* Plasserer innholdet til høyre */
+    align-items: flex-end; /* Justerer vertikal plassering */
+}
+
+.til-venstre {
+    flex-direction: column;
+    align-items: first baseline;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .image-grid img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+@media only screen and (max-width: 600px) {
+    * {
+        font-size: 14px; /* Mindre størrelse for mobil */
+    }
+}
