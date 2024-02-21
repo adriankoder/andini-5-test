@@ -72,7 +72,7 @@ h1 {
     flex-direction: column;
     align-items: first baseline;
 }
-
+  
 .image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -84,9 +84,8 @@ h1 {
     height: auto;
   }
   
-
-@media only screen and (max-width: 600px) {
-    * {
-        font-size: 14px; /* Mindre størrelse for mobil */
+  @media screen and (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
-}
+  }
