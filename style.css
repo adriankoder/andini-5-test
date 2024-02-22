@@ -10,7 +10,7 @@ body {
     height: auto;
     position: absolute; /* Setter bildet til absolutt posisjonering */
     top: 15%; /* Plasserer bildet i toppen av body */
-    right: 42%; /* Plasserer bildet i høyre side av body */
+    right: 45%; /* Plasserer bildet i høyre side av body */
     background-image: url("andini med kanin.jpg"); /* Legger til bakgrunnsbilde */
     background-size: cover; /* Sørger for at bakgrunnsbildet dekker hele elementet */
     transform: rotate(5deg);
