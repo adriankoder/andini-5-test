@@ -84,7 +84,7 @@ body, html {
 }
 
 @media screen and (max-width: 768px) {
-    .image-grid {
+    .bilde-av-andini-og-kanin {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 }
