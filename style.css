@@ -6,7 +6,7 @@ body {
 
 /* Stil for å endre størrelsen på bildene */
 .andini-forskreket {
-    width: 555px;
+    width: 605px;
     height: auto;
     position: absolute; /* Setter bildet til absolutt posisjonering */
     top: 15%; /* Plasserer bildet i toppen av body */
