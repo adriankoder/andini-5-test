@@ -6,48 +6,48 @@ body {
 
 /* Stil for å endre størrelsen på bildene */
 .andini-forskreket {
-    width: 555px;
-    height: auto;
-    position: absolute; /* Setter bildet til absolutt posisjonering */
-    top: 15%; /* Plasserer bildet i toppen av body */
-    right: 32%; /* Plasserer bildet i høyre side av body */
-    background-image: url("andini med kanin.jpg"); /* Legger til bakgrunnsbilde */
-    background-size: cover; /* Sørger for at bakgrunnsbildet dekker hele elementet */
-    transform: rotate(5deg);
+
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    transform: rotate(-5deg);
 }
 
 .andini-med-tørkle-i-honden {
-    width: 390px;
-    height: auto;
-    position: absolute; /* Setter bildet til absolutt posisjonering */
-    top: 15%; /* Plasserer bildet i toppen av body */
-    right: 73%; /* Plasserer bildet i høyre side av body */
-    background-image: url("andini med kanin.jpg"); /* Legger til bakgrunnsbilde */
-    background-size: cover; /* Sørger for at bakgrunnsbildet dekker hele elementet */
+    color: white;
+    justify-content: flex-end;
+    display: flex;
+    font-size: 12px; /* Sørger for at bakgrunnsbildet dekker hele elementet */
 }
 
 .bilde-av-andini-og-kanin {
-    width: 136px;
-    height: auto;
-    position: absolute; /* Setter bildet til absolutt posisjonering */
-    top: 0; /* Plasserer bildet i toppen av body */
-    right: 0%; /* Plasserer bildet i høyre side av body */
-    background-image: url("andini med kanin.jpg"); /* Legger til bakgrunnsbilde */
-    background-size: cover; /* Sørger for at bakgrunnsbildet dekker hele elementet */
+    height: 200px;
+    position: relative;
+    left: -23rem;
+    justify-content: flex-start;
+    font-size: 12px;
     transform: rotate(-5deg);
 }
 
 p {
-    color: white;
-    justify-content: flex-end;
-    align-items: flex-start;
-    height: 7px;
-    display: flex;
-    font-size: 12px; /* Endre størrelsen til det du ønsker */
+    color: white; /* Endrer tekstfargen for alle <p> elementer */
 }
 
 h1 {
-    color: white;
+    color: white; /* Setter farge på h1-teksten til hvitt */
+}
+
+/* Midtstilling av h1 */
+body, html {
+    height: 220%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.midtstilt {
+    text-align: center;
 }
 
 .container {
@@ -68,23 +68,83 @@ h1 {
 
 .til-venstre {
     flex-direction: column;
-    align-items: first baseline;
+    align-items: flex-start; /* Justerer vertikal plassering */
 }
-  
+
+/* CSS for image-grid */
 .image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-  }
-  
-  .image-grid img {
+}
+
+.image-grid img {
     max-width: 100%;
     height: auto;
+<<<<<<< HEAD
   }
   
   @media screen and (max-width: 768px) {
     .image-grid {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       flex-direction: column;
+=======
+}
+
+@media screen and (max-width: 768px) {
+    .bilde-av-andini-og-kanin {
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+>>>>>>> 5141912bf60352b921cb2666f9b976fecfa75447
     }
-  }
+}
+@media screen and (max-width: 768px) {
+    .andini-forskreket {
+        grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .andini-med-tørkle-i-honden {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+@media screen and (max-width: 768px) {
+    .midtstilt {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .left-content {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .right-content {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .til-venstre {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
