@@ -85,5 +85,6 @@ h1 {
   @media screen and (max-width: 768px) {
     .image-grid {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      flex-direction: column;
     }
   }
