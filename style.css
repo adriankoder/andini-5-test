@@ -81,20 +81,17 @@ body, html {
 .image-grid img {
     max-width: 100%;
     height: auto;
-<<<<<<< HEAD
   }
   
   @media screen and (max-width: 768px) {
     .image-grid {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       flex-direction: column;
-=======
-}
+}}
 
 @media screen and (max-width: 768px) {
     .bilde-av-andini-og-kanin {
-        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
->>>>>>> 5141912bf60352b921cb2666f9b976fecfa75447
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr))
     }
 }
 @media screen and (max-width: 768px) {
@@ -146,5 +143,4 @@ body, html {
 @media screen and (max-width: 768px) {
     .image-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-}
+    }}
